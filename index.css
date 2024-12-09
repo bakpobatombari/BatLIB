@@ -1,0 +1,33 @@
+
+ul{
+    list-style: none;
+}
+a{
+    color: inherit;
+}
+.webnav{
+    height: 50px;
+}
+.webnav .nav-items .web-items a{
+    margin-right: 1rem;
+}
+.webnav .nav-items .mobile-items{
+    display: none;
+}
+.sidenav{
+    height: 100vh;
+    z-index: 10;
+    position: fixed;
+    top:0;
+    display: none;
+    right:0;
+}
+@media only screen and (min-width:320px) and (max-width:720px) {
+    .webnav .nav-items .web-items{
+        display: none !important;
+    }
+    .webnav .nav-items .mobile-items{
+        display: block !important;
+    }
+    .sidenav{ display: block !important;}
+}

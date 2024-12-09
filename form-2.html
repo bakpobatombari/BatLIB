@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 2</title>
+    <link rel="stylesheet" href="./form.css">
+</head>
+<body>
+    <div class="form">
+        <label for="">
+            FirstName:
+        </label>
+        <input type="text" name="usernmae" id="firstname">
+        <label for="">
+            Email:
+        </label>
+        <input type="text" name="email" id="email">
+        <label for="">
+            Subject:
+        </label>
+        <input type="text" name="subject" id="subject">
+
+        <label for="">
+            Message:
+        </label>
+        <textarea name="message" cols="50" rows="8" id="message"></textarea>
+        <button class="send">Send</button>
+        <p class="p"></p>
+    </div>
+    <script src="./lib.js"></script>
+    <script>
+        $(".send").on("click", function(){
+            $(".form").contact("#firstname","#email","#subject","#message",".p",".send","./index.html");
+        })
+        
+    </script>
+</body>
+</html>

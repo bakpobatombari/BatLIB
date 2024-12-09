@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./form.css">
+</head>
+<body>
+    <div class="form">
+        <h1 class="text-center">Normal Redirect Login Form <br>Handled by Batlib</h1>
+        <p>Username: admin <br>Password: admin</p>
+        <label for="">Username</label>
+        <input type="text" name="username" id="username">
+        <label for="">Password</label>
+        <input type="password" name="password" id="password">
+        <div class="text-center">
+        <button id="submit">Submit</button>
+    </div>
+    </div>
+    <script src="./lib.js"></script>
+    <script>
+        $("#submit").on("click",()=>{
+        $(".form").handle("#username","#password","admin","admin","./index.html");
+        });
+    </script>
+</body>
+</html>

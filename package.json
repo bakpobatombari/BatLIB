@@ -1,0 +1,15 @@
+{
+  "name": "batlib",
+  "version": "1.0.0",
+  "description": "A js framework",
+  "main": "index.js",
+  "scripts": {
+    "start": "index.js",
+    "test": "test"
+  },
+  "keywords": [
+    "start"
+  ],
+  "author": "batombari",
+  "license": "ISC"
+}
