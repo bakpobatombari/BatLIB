@@ -1,0 +1,1 @@
+$('.slide').slideshow(5000);
